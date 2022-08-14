@@ -2,6 +2,52 @@
 {% load static %}
 {% block content %}
 
-<h1>Carrinho</h1>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="box-element">
+            <a class="btn btn-outline-dark"href="{% url 'store'  %}">&#x2190;Continuar Comprando</a>
+            <br>
+            <br>
+
+            <table class="table">
+                <tr>
+                    <tr>
+                        <th><h5>Itens: <strong>X</strong></h5></th>
+                        <th><h5>Total: <strong>X</strong></h5></th>
+                        <th>
+                            <a style="float:right;margin:5px" class="btn btn-success" ref="{% url 'checkout' %}">Finalizar compra</a>
+                        </th>
+                    </tr>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <div class="box-element">
+            <div class="cart-row">
+                <div style="flex:2"></div>
+                <div style="flex:2"><strong>Item</strong></div>
+                <div style="flex:2"><strong>Preço</strong></div>
+                <div style="flex:2"><strong>Quantidade</strong></div>
+                <div style="flex:2"><strong>Total</strong></div>
+            </div>
+
+            <div class="cart-row">
+                <div style="flex:2"><img class="row-image" src="{% static 'images/violaodecria.jpg' %}"></div>
+                <div style="flex:2">Violão</div>
+                <div style="flex:2">R$250</div>
+                <div style="flex:2">
+                    <p class="quantity">2</p>
+                    <div class="quantity">
+                        <img class="chg-quantity" src="{% static 'images/setapracima.png' %}">
+                        <img class="chg-quantity" src="{% static 'images/setaprabaixo.png' %}">
+                    </div>
+                </div>
+                <div style="flex:2">R$500</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}

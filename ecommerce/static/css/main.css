@@ -1,5 +1,5 @@
 body{
-	background-color: #8ecae6;
+	background-color: #c2c2c2;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .bg-dark{
-	background-color: #219ebc!important;
+	background-color: #000000!important;
 }
 
 #cart-icon{
