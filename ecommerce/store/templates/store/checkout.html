@@ -2,6 +2,42 @@
 {% load static %}
 {% block content %}
 
-<h1>Checkout</h1>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="box-element" id="form-wrapper">
+            <form id="form">
+                <div id="user-info">
+                    <div class="form-field">
+                        <input required class="form-control" type="text" name="name" placeholder="Nome:">
+                    </div>
+                    <div class="form-field">
+                        <input required class="form-control" type="email" name="email" placeholder="Email:">
+                    </div>
+                </div>
+                <div id="shopping-info">
+                    <hr>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="address" placeholder="Endereço:">
+                    </div>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="address" placeholder="Cidade:">
+                    </div>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="address" placeholder="Estado:">
+                    </div>
+                </div>
+
+                <hr>
+                <input id="form-button" class="btn btn-success btn-block" type="submit" value="Continuar">
+            </form>            
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="box-element">
+            
+        </div>
+    </div>
+    
+</div>
 
 {% endblock content %}
