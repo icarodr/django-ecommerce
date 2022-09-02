@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-import django_heroku
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -17,7 +16,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'store.apps.StoreConfig',
 ]
 
@@ -88,5 +86,3 @@ STATICFILES_DIRS =[
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-django_heroku.settings(locals())
