@@ -3,6 +3,9 @@ from django.shortcuts import render, redirect
 from .forms import LoginForm
 from django.http import HttpResponse
 from django.contrib.auth import login, logout, authenticate
+from rest_framework import generics
+from .models import Music
+from api.serializers import MusicSerializer
 
 def store(request):
     context = {}
@@ -35,3 +38,7 @@ def login(request):
         'form':credenciais,
     }
     return render(request, 'store/login.html', context)
+
+class MusicList(generics.ListCreateAPIView):
+    queryset = Music.objects.all()
+    serializer_class = MusicSerializer
