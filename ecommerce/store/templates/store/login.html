@@ -8,7 +8,7 @@
 </head>
     <body>
         <div class="loginBox">
-            <h1>FORMS DE CRIA 2.0</h1>
+            <h1>Login</h1>
             <form method = 'post'>
                 {% csrf_token %}
                 {{form.as_p}}
@@ -21,17 +21,19 @@
 
     <style>
         body{
-            background-image: linear-gradient(to right, purple, black);
+            background-color: black;
         }
         .loginBox{
             background-color: whitesmoke;
-            width: fit-content;
+            width: 20vw;
             margin-left: 35%;
             border-radius: 10px;
+            height: 40vh;
+
         }
         h1{
-            background-color: aquamarine;
-            color: purple;
+            background-color: whitesmoke;
+            color: black;
         }
         button{
             background-color: rgb(25, 237, 25);
@@ -39,6 +41,8 @@
             height: 50px;
             border-radius: 10px ;
             font-size: 20px;
+            color:white;
+            border:none;
         }
     </style>
 </html>
